@@ -1,11 +1,6 @@
 import { useRef } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import a1 from "@/assets/avatar-1.jpg";
-import a2 from "@/assets/avatar-2.jpg";
-import a3 from "@/assets/avatar-3.jpg";
-import a4 from "@/assets/avatar-4.jpg";
-import a5 from "@/assets/avatar-5.jpg";
 
 const reviews = [
   {
@@ -13,35 +8,30 @@ const reviews = [
       "The calmest hour of my month. The shaping is unmatched and the polish lasts forever.",
     name: "Ingrid S.",
     role: "Architect",
-    avatar: a1,
   },
   {
     quote:
       "I've tried every studio in the city. None come close to the precision and quiet I get here.",
     name: "Maya K.",
     role: "Stylist",
-    avatar: a2,
   },
   {
     quote:
       "Minimal, modern, no small talk required. My nails have never looked better.",
     name: "Sofia L.",
     role: "Editor",
-    avatar: a3,
   },
   {
     quote:
       "Booked once, came back forever. The space is beautiful and the work is meticulous.",
     name: "Anna R.",
     role: "Photographer",
-    avatar: a4,
   },
   {
     quote:
       "It feels like a gallery — every detail considered. My new monthly ritual.",
     name: "Elin H.",
     role: "Curator",
-    avatar: a5,
   },
 ];
 
@@ -87,15 +77,15 @@ export function Testimonials() {
               </p>
 
               <div className="mt-10 flex items-center gap-4 border-t border-border pt-6">
-                {/* Avatar photo */}
-                <img
-                  src={r.avatar}
-                  alt={r.name}
-                  loading="lazy"
-                  width={56}
-                  height={56}
-                  className="size-14 shrink-0 rounded-full object-cover ring-2 ring-foreground/10"
-                />
+                {/* Avatar initial */}
+                <div
+                  aria-hidden
+                  className="flex size-14 shrink-0 items-center justify-center rounded-full bg-foreground text-background ring-2 ring-foreground/10"
+                >
+                  <span className="text-lg font-black uppercase tracking-tight">
+                    {r.name.trim().charAt(0)}
+                  </span>
+                </div>
                 <div>
                   <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-foreground">
                     {r.name}

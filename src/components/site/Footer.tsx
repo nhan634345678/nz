@@ -1,10 +1,10 @@
 import { Instagram, Facebook, Twitter, Youtube, Mail } from "lucide-react";
 
 const socials = [
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Youtube, href: "#", label: "YouTube" },
+  { icon: Instagram, href: "https://www.instagram.com/", label: "Instagram" },
+  { icon: Facebook, href: "https://www.facebook.com/", label: "Facebook" },
+  { icon: Twitter, href: "https://twitter.com/", label: "Twitter" },
+  { icon: Youtube, href: "https://www.youtube.com/", label: "YouTube" },
   { icon: Mail, href: "mailto:hello@nordnails.no", label: "Email" },
 ];
 
@@ -73,16 +73,21 @@ export function Footer() {
           style={{ borderColor: "rgba(255,255,255,0.12)" }}
         >
           <div className="flex items-center gap-3">
-            {socials.map(({ icon: Icon, href, label }) => (
-              <a
-                key={label}
-                href={href}
-                aria-label={label}
-                className="flex size-10 items-center justify-center rounded-full border border-neutral-500/40 text-neutral-200 transition-all hover:scale-105 hover:border-white hover:bg-white hover:text-neutral-900"
-              >
-                <Icon className="size-4" strokeWidth={1.75} />
-              </a>
-            ))}
+            {socials.map(({ icon: Icon, href, label }) => {
+              const external = href.startsWith("http");
+              return (
+                <a
+                  key={label}
+                  href={href}
+                  aria-label={label}
+                  target={external ? "_blank" : undefined}
+                  rel={external ? "noopener noreferrer" : undefined}
+                  className="flex size-10 items-center justify-center rounded-full border border-neutral-500/40 text-neutral-200 transition-all hover:scale-105 hover:border-white hover:bg-white hover:text-neutral-900"
+                >
+                  <Icon className="size-4" strokeWidth={1.75} />
+                </a>
+              );
+            })}
           </div>
           <p className="text-xs text-neutral-400">
             © {new Date().getFullYear()} Nord Nails Studio · Oslo, Norway · All

@@ -86,8 +86,8 @@ export function Navbar() {
             <li className="pt-4">
               <Button
                 asChild
-                variant="outline"
-                className="w-full rounded-full border-foreground"
+                className="w-full rounded-full border-0 text-white hover:opacity-90"
+                style={{ backgroundColor: "#8B6F4E" }}
                 onClick={() => setOpen(false)}
               >
                 <a href="#contact">Book Now</a>

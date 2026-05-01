@@ -9,12 +9,12 @@ import s5 from "@/assets/service-5.jpg";
 import s6 from "@/assets/service-6.jpg";
 
 const services = [
-  { name: "Classic Manicure", desc: "Shape, cuticle care and a flawless polish — the everyday essential.", price: "€35", img: s1 },
-  { name: "Gel Manicure", desc: "Long-lasting high-gloss colour that holds up for two full weeks.", price: "€55", img: s2 },
-  { name: "Builder Gel", desc: "Adds quiet strength and structure to natural nails.", price: "€70", img: s3 },
-  { name: "Soft Pedicure", desc: "Foot soak, gentle scrub and a polish — pure quiet ritual.", price: "€55", img: s4 },
-  { name: "Nail Art", desc: "Hand-drawn minimalist details, priced per nail.", price: "€8", img: s5 },
-  { name: "Removal & Repair", desc: "Gentle removal and repair — never any damage to the natural nail.", price: "€20", img: s6 },
+  { name: "Classic Manicure", desc: "Shape, cuticle care and a flawless polish — the everyday essential.", price: "$38", img: s1 },
+  { name: "Gel Manicure", desc: "Long-lasting high-gloss colour that holds up for two full weeks.", price: "$60", img: s2 },
+  { name: "Builder Gel", desc: "Adds quiet strength and structure to natural nails.", price: "$76", img: s3 },
+  { name: "Soft Pedicure", desc: "Foot soak, gentle scrub and a polish — pure quiet ritual.", price: "$60", img: s4 },
+  { name: "Nail Art", desc: "Hand-drawn minimalist details, priced per nail.", price: "$9", img: s5 },
+  { name: "Removal & Repair", desc: "Gentle removal and repair — never any damage to the natural nail.", price: "$22", img: s6 },
 ];
 
 export function Services() {

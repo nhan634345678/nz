@@ -1,4 +1,5 @@
 import { Instagram, Facebook, Twitter, Youtube, Mail } from "lucide-react";
+import { Logo } from "@/components/site/Logo";
 
 const socials = [
   { icon: Instagram, href: "https://www.instagram.com/", label: "Instagram" },
@@ -25,8 +26,14 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
           {/* Brand */}
           <div className="md:col-span-2">
-            <a href="#top" className="text-2xl font-black tracking-tight text-white">
-              NORD<span className="text-neutral-400">.</span>NAILS
+            <a
+              href="#top"
+              className="flex items-center gap-2 text-2xl font-black tracking-tight text-white"
+            >
+              <Logo className="size-8" color="#E8D9B0" />
+              <span>
+                NORD<span className="text-neutral-400">.</span>NAILS
+              </span>
             </a>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-neutral-300">
               A quiet Scandinavian nail studio in Oslo. Unhurried craft,

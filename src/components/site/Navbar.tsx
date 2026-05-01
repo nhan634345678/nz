@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { Logo } from "@/components/site/Logo";
 
 const links = [
   { href: "#services", label: "Services" },
@@ -32,8 +33,15 @@ export function Navbar() {
       )}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-10">
-        <a href="#top" className="text-xl font-black tracking-tight text-foreground">
-          NORD<span className="text-muted-foreground">.</span>NAILS
+        <a
+          href="#top"
+          className="flex items-center gap-2 text-xl font-black tracking-tight text-foreground"
+          aria-label="Nord Nails — home"
+        >
+          <Logo className="size-7" color="#0F4C4A" />
+          <span>
+            NORD<span className="text-muted-foreground">.</span>NAILS
+          </span>
         </a>
 
         <ul className="hidden items-center gap-10 md:flex">

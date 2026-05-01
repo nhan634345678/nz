@@ -80,7 +80,8 @@ export function Testimonials() {
                 {/* Avatar initial */}
                 <div
                   aria-hidden
-                  className="flex size-14 shrink-0 items-center justify-center rounded-full bg-foreground text-background ring-2 ring-foreground/10"
+                  className="flex size-14 shrink-0 items-center justify-center rounded-full text-white ring-2 ring-foreground/10"
+                  style={{ backgroundColor: "#8B6F4E" }}
                 >
                   <span className="text-lg font-black uppercase tracking-tight">
                     {r.name.trim().charAt(0)}

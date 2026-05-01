@@ -27,7 +27,7 @@ export function Hero() {
             <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-white/80">
               Est. 2024 — Oslo
             </p>
-            <h1 className="mt-6 text-5xl font-black leading-[0.95] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
+            <h1 className="mt-6 text-5xl font-black leading-[1.15] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
               Quietly
               <br />
               beautiful

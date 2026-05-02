@@ -6,21 +6,33 @@ interface LogoProps {
 export function Logo({ className, color = "#0F4C4A" }: LogoProps) {
   return (
     <svg
-      viewBox="0 0 40 40"
+      viewBox="0 0 48 48"
       className={className}
       fill="none"
       stroke={color}
-      strokeWidth="1.6"
+      strokeWidth="1.75"
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
     >
-      {/* Stylized fingernail silhouette */}
-      <path d="M20 5 C26 5 29 9 29 16 L29 28 C29 32 25 35 20 35 C15 35 11 32 11 28 L11 16 C11 9 14 5 20 5 Z" />
-      {/* Cuticle line / moon */}
-      <path d="M13 14 C16 12 24 12 27 14" />
+      {/* Finger outline */}
+      <path d="M16 44 L16 22 C16 13 19 7 24 7 C29 7 32 13 32 22 L32 44" />
+
+      {/* Nail plate — clear almond shape sitting on the finger tip */}
+      <path
+        d="M17.5 20 C17.5 13 20 9 24 9 C28 9 30.5 13 30.5 20 C30.5 24 28.5 27 24 27 C19.5 27 17.5 24 17.5 20 Z"
+        fill={color}
+        fillOpacity="0.08"
+      />
+
+      {/* Lunula (half-moon at the cuticle base) */}
+      <path d="M20 22.5 C21.2 24 26.8 24 28 22.5" />
+
+      {/* Nail tip highlight — the French-tip crescent */}
+      <path d="M19 13.5 C21 11 27 11 29 13.5" strokeWidth="1.4" />
+
       {/* Subtle shine accent */}
-      <path d="M17 19 L17 27" opacity="0.55" />
+      <path d="M21.5 16.5 L21.5 19.5" opacity="0.5" strokeWidth="1.2" />
     </svg>
   );
 }

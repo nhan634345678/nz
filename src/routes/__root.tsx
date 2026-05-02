@@ -29,14 +29,18 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Nordnails" },
+      { name: "description", content: "A modern, minimalist nail salon website showcasing services, gallery, and testimonials with a clean, Scandinavian-inspired aesthetic." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Nordnails" },
+      { property: "og:description", content: "A modern, minimalist nail salon website showcasing services, gallery, and testimonials with a clean, Scandinavian-inspired aesthetic." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Nordnails" },
+      { name: "twitter:description", content: "A modern, minimalist nail salon website showcasing services, gallery, and testimonials with a clean, Scandinavian-inspired aesthetic." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5e4d24dd-1508-4980-b216-f98ba053a8fa/id-preview-68fd364a--4ec7acf3-f384-4ad8-886e-491ffad02a19.lovable.app-1777693848230.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5e4d24dd-1508-4980-b216-f98ba053a8fa/id-preview-68fd364a--4ec7acf3-f384-4ad8-886e-491ffad02a19.lovable.app-1777693848230.png" },
     ],
     links: [
       {

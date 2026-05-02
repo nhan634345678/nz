@@ -32,16 +32,13 @@ export function Navbar() {
           : "bg-transparent",
       )}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-10">
+      <nav className="flex items-center justify-between pl-3 pr-6 py-5 md:pl-4 md:pr-10">
         <a
           href="#top"
-          className="flex items-center gap-2 text-xl font-black tracking-tight text-foreground"
+          className="text-xl font-black tracking-tight text-foreground"
           aria-label="Nord Nails — home"
         >
-          <Logo className="size-7" color="#0F4C4A" />
-          <span>
-            NORD<span className="text-muted-foreground">.</span>NAILS
-          </span>
+          NORD<span className="text-muted-foreground">.</span>NAILS
         </a>
 
         <ul className="hidden items-center gap-10 md:flex">
